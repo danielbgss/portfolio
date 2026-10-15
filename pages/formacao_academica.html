@@ -11,53 +11,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Lobster&family=Parisienne&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <!-- BARRA DE NAVEGAÇÃO COM MENU OFFCANVAS : navbar sticky com offcanvas -->
-
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div class="container-fluid justify-content-start ms-2">
-        
-                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="bi bi-list"></i></button>
-                <a class="nav-link ms-2 fs-5" href="../index.html">Início</a>
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="bi bi-list"></i></button>
+            <a class="nav-link ms-2 fs-5" href="../index.html">Início</a>
         </div>
     </nav>
 
     <!-- CODIGO PARA GERAR O OFFCANVAS -->
-     <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">MENU</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <nav class="nav flex-column">
-                    <a class="nav-link text-reset" href="self.html"><i class="bi bi-person me-2"></i>Quem sou eu?</a>
-                    <a class="nav-link text-reset" href="formacao_academica.html"><i class="bi bi-mortarboard me-2"></i>Formação Acadêmica</a>
-                    <a class="nav-link text-reset" href="projetos.html"><i class="bi bi-book me-2"></i>Projetos</a>
-                    <a class="nav-link text-reset" href="contact.html"><i class="bi bi-telephone me-2"></i>Contato</a>
-                </nav>
-            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <nav class="nav flex-column">
+                <a class="nav-link text-reset" href="self.html"><i class="bi bi-person me-2"></i>Quem sou eu?</a>
+                <a class="nav-link text-reset" href="formacao_academica.html"><i class="bi bi-mortarboard me-2"></i>Formação Acadêmica</a>
+                <a class="nav-link text-reset" href="projetos.html"><i class="bi bi-book me-2"></i>Projetos</a>
+                <a class="nav-link text-reset" href="contact.html"><i class="bi bi-telephone me-2"></i>Contato</a>
+            </nav>
         </div>
     </div>
-
 
     <!-- DESIGN : LINHA DO TEMPO CONTENDO ORDEM CRONOLOGICA DAS FORMAÇÕES ACADÊMICAS NA MINHA VIDA -->
     <div class="container text-center mt-4">
         <h1>FORMAÇÃO ACADÊMICA</h1>
     </div>
+
     <div class="container text-center mt-5">
-        <div class="row cols-2">
-            <div class="col-6">
+
+        <!-- ROW 1: card à ESQUERDA, imagem à DIREITA -->
+        <div class="row align-items-center mb-5">
+            <div class="col-6 d-flex justify-content-center">
                 <div class="card" style="width: 18rem">
                     <div class="card-header">
                         ENSINO FUNDAMENTAL
-                        <ul class="list-group" list-group-flush">
+                        <ul class="list-group list-group-flush">
                             <li class="list-group-item">
-                                <img src="..." alt="...">
+                                <img src="..." alt="Ensino Fundamental" class="img-fluid">
                             </li>
                             <li class="list-group-item">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalFundamental">
                                     Saiba Mais
                                 </button>
                             </li>
@@ -65,25 +63,117 @@
                     </div>
                 </div>
             </div>
-
-
-            <!-- MODAL -->
-
             <div class="col-6">
-                <img src="..." alt="...">
+                <img src="..." alt="Ensino Fundamental" class="img-fluid">
             </div>
+        </div>
 
+        <!-- ROW 2: imagem à ESQUERDA, card à DIREITA -->
+        <div class="row align-items-center mb-5">
+            <div class="col-6">
+                <img src="..." alt="Ensino Médio" class="img-fluid">
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <div class="card" style="width: 18rem">
+                    <div class="card-header">
+                        ENSINO MÉDIO
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <img src="..." alt="Ensino Médio" class="img-fluid">
+                            </li>
+                            <li class="list-group-item">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMedio">
+                                    Saiba Mais
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
+        <!-- ROW 3: card à ESQUERDA, imagem à DIREITA -->
+        <div class="row align-items-center mb-5">
+            <div class="col-6 d-flex justify-content-center">
+                <div class="card" style="width: 18rem">
+                    <div class="card-header">
+                        ENSINO SUPERIOR
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <img src="..." alt="Ensino Superior" class="img-fluid">
+                            </li>
+                            <li class="list-group-item">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSuperior">
+                                    Saiba Mais
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <img src="..." alt="Ensino Superior" class="img-fluid">
+            </div>
         </div>
 
     </div>
 
+    <!-- MODAL 1: ENSINO FUNDAMENTAL (com scroll) -->
+    <div class="modal fade" id="modalFundamental" tabindex="-1" aria-labelledby="modalFundamentalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalFundamentalLabel">Ensino Fundamental</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Escreva aqui as informações sobre o seu Ensino Fundamental: escola, período, lembranças, aprendizados...</p>
+                    <p>Se o conteúdo for maior que a altura da tela, o corpo do modal ganha uma barra de rolagem e o cabeçalho e o rodapé continuam fixos.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    
+    <!-- MODAL 2: ENSINO MÉDIO (com scroll) -->
+    <div class="modal fade" id="modalMedio" tabindex="-1" aria-labelledby="modalMedioLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalMedioLabel">Ensino Médio</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Escreva aqui as informações sobre o seu Ensino Médio: escola, período, curso técnico (se houver), projetos...</p>
+                    <p>Se o conteúdo for maior que a altura da tela, o corpo do modal ganha uma barra de rolagem e o cabeçalho e o rodapé continuam fixos.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-
+    <!-- MODAL 3: ENSINO SUPERIOR (com scroll) -->
+    <div class="modal fade" id="modalSuperior" tabindex="-1" aria-labelledby="modalSuperiorLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalSuperiorLabel">Ensino Superior</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Escreva aqui as informações sobre o seu Ensino Superior: instituição, curso, período, estágios, projetos...</p>
+                    <p>Se o conteúdo for maior que a altura da tela, o corpo do modal ganha uma barra de rolagem e o cabeçalho e o rodapé continuam fixos.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
