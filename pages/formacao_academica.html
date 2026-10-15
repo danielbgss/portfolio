@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formação Acadêmica</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,81 +38,64 @@
     </div>
 
     <!-- DESIGN : LINHA DO TEMPO CONTENDO ORDEM CRONOLOGICA DAS FORMAÇÕES ACADÊMICAS NA MINHA VIDA -->
-    <div class="container text-center mt-4">
-        <h1>FORMAÇÃO ACADÊMICA</h1>
+    <div class="container text-center py-5">
+        <h1 class="display-5 fw-bold text-warning">FORMAÇÃO ACADÊMICA</h1>
+        <hr class="w-25 mx-auto border-warning border-2 opacity-100">
     </div>
 
     <div class="container text-center mt-5">
 
-        <!-- ROW 1: card à ESQUERDA, imagem à DIREITA -->
-        <div class="row align-items-center mb-5">
-            <div class="col-6 d-flex justify-content-center">
-                <div class="card" style="width: 18rem">
-                    <div class="card-header">
-                        ENSINO FUNDAMENTAL
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <img src="..." alt="Ensino Fundamental" class="img-fluid">
-                            </li>
-                            <li class="list-group-item">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalFundamental">
-                                    Saiba Mais
-                                </button>
-                            </li>
-                        </ul>
+        <!-- ROW 1: ENSINO FUNDAMENTAL -->
+        <div class="row align-items-center my-5 py-4">
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+                <div class="card border-warning shadow-lg" style="width: 22rem">
+                    <div class="card-body">
+                        <span class="badge text-bg-warning mb-2">2014 - 2022</span>
+                        <h5 class="card-title">Ensino Fundamental</h5>
+                        <p class="card-text text-body-secondary">Mérito, Contagem</p>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalFundamental">
+                            Saiba Mais
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="col-6">
-                <img src="..." alt="Ensino Fundamental" class="img-fluid">
+            <div class="col-12 col-md-6">
+                <img class="w-25 d-none d-md-block mx-auto" src="../images/arrow-sub-right-down-svgrepo-com (1).svg" alt="">
             </div>
         </div>
 
-        <!-- ROW 2: imagem à ESQUERDA, card à DIREITA -->
-        <div class="row align-items-center mb-5">
-            <div class="col-6">
-                <img src="..." alt="Ensino Médio" class="img-fluid">
+        <!-- ROW 2: ENSINO MÉDIO -->
+        <div class="row align-items-center my-5 py-4">
+            <div class="col-12 col-md-6 ">
+                <img src="../images/arrow-sub-left-down-svgrepo-com.svg" alt="" class=" w-25 d-none d-md-block mx-auto">
             </div>
-            <div class="col-6 d-flex justify-content-center">
-                <div class="card" style="width: 18rem">
-                    <div class="card-header">
-                        ENSINO MÉDIO
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <img src="..." alt="Ensino Médio" class="img-fluid">
-                            </li>
-                            <li class="list-group-item">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMedio">
-                                    Saiba Mais
-                                </button>
-                            </li>
-                        </ul>
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+                <div class="card border-warning shadow-lg" style="width: 22rem">
+                    <div class="card-body">
+                        <span class="badge text-bg-warning mb-2">2023 - 2025</span>
+                        <h5 class="card-title">Ensino Médio</h5>
+                        <p class="card-text text-body-secondary">IFMG, Neves</p>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalMedio">
+                            Saiba Mais
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- ROW 3: card à ESQUERDA, imagem à DIREITA -->
-        <div class="row align-items-center mb-5">
-            <div class="col-6 d-flex justify-content-center">
-                <div class="card" style="width: 18rem">
-                    <div class="card-header">
-                        ENSINO SUPERIOR
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <img src="..." alt="Ensino Superior" class="img-fluid">
-                            </li>
-                            <li class="list-group-item">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSuperior">
-                                    Saiba Mais
-                                </button>
-                            </li>
-                        </ul>
+        <!-- ROW 3: ENSINO SUPERIOR -->
+        <div class="row align-items-center my-5 py-4">
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+                <div class="card border-warning shadow-lg" style="width: 22rem">
+                    <div class="card-body">
+                        <span class="badge text-bg-warning mb-2">2026 - Atual</span>
+                        <h5 class="card-title">Ensino Superior</h5>
+                        <p class="card-text text-body-secondary">UFMG, Belo Horizonte</p>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalSuperior">
+                            Saiba Mais
+                        </button>
                     </div>
                 </div>
-            </div>
-            <div class="col-6">
-                <img src="..." alt="Ensino Superior" class="img-fluid">
             </div>
         </div>
 
